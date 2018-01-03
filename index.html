@@ -16,6 +16,8 @@
         <p>Enter your location to find recommendations closest to you!</p>
       </header>
 
+      <span id="error"></span>
+
       <form action="#" class="js-search-form row" id="search-form">
         <input type="text" placeholder="Enter a city" class="search-query" id="search-term" required>
         <button type="submit" class="submit-button">Search</button>
@@ -24,7 +26,8 @@
 
     <section role="region" class="js-weather-results row" id="weather-results"></section>
 
-    <nav role="navigation" class="js-navigation-icons" id="navigation-results" hidden>
+
+    <nav role="navigation" class="js-navigation-icons" id="navigation-results">
       <div class="options row">
         <button class="category-button" id="food-button">Food</button>
         <button class="category-button" id="shops-button">Shops</button>
