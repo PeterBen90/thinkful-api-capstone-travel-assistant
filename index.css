@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+main {
+  padding-top: 100px;
+}
+
+header,
+form {
+  text-align: center;
+}
+
+.logo {
+  font-size: 50px;
+}
+
+.search-query {
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.submit-button {
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.js-weather-results {
+  text-align: center;
+}
+
+.js-navigation-buttons {
+  text-align: center;
+}
+
+.category-button {
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: auto;
+  margin: 0;
+}
+
+.venue-results {
+  padding: 50px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
