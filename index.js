@@ -66,7 +66,7 @@ function getPlacesResults() {
 
 function showPlacesData(result) {
   return `
-    <div class="venue-results col-3">
+    <div class="venue-results">
       <img class="venue-photo" src="https://igx.4sqi.net/img/general/width333${result.venue.featuredPhotos.items[0].suffix}">
       <h3 class="venue"><a href="${result.venue.url}" target="_blank">${result.venue.name}</a></h3>
     </div>
