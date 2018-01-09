@@ -6,6 +6,9 @@ function autocompleteQuery() {
 function getWeatherResults() {
   $('.js-search-form').submit(function(event) {
     event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $("#weather-results").offset().top
+    }, 1500);
     let city = $('.search-query').val();
 
     $.ajax({
@@ -29,20 +32,24 @@ function getWeatherResults() {
 
 function showWeatherData(data) {
   return `
-    <h2 class="results-title">Results for the current weather in ${data.name}:</h2>
-    <img class="weather-icon" src="https://openweathermap.org/img/w/${data.weather[0].icon}.png">
-    <h3 class="weather">Current Weather: ${data.weather[0].main}</h3>
-    <h3 class="weather">Description: ${data.weather[0].description}</h3>
-    <h3 class="weather">Tempurature: ${data.main.temp} °C</h3>
-    <h3 class="weather">Humidity: ${data.main.humidity}</h3>
-    <h3 class="weather">Min. Temp: ${data.main.temp_min} °C</h3>
-    <h3 class="weather">Max. Temp: ${data.main.temp_max} °C</h3>
-
+    <div class="row">
+      <h2 class="results-title">Results for the current weather in ${data.name}:</h2>
+      <img class="weather-icon" src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="picture of weather icon">
+      <h3 class="weather">Current Weather:</span> ${data.weather[0].main}</h3>
+      <h3 class="weather">Description: ${data.weather[0].description}</h3>
+      <h3 class="weather">Tempurature: ${data.main.temp} °C</h3>
+      <h3 class="weather">Humidity: ${data.main.humidity}</h3>
+      <h3 class="weather">Min. Temp: ${data.main.temp_min} °C</h3>
+      <h3 class="weather">Max. Temp: ${data.main.temp_max} °C</h3>
+    </div>
   `;
 }
 
 function getPlacesResults() {
   $('.category-button').click(function(event) {
+    $('html, body').animate({
+      scrollTop: $("#places-results").offset().top
+    }, 1500);
     let category = $(this).text();
     let city = $('.search-query').val();
 
@@ -66,9 +73,17 @@ function getPlacesResults() {
 
 function showPlacesData(result) {
   return `
-    <div class="venue-results">
-      <img class="venue-photo" src="https://igx.4sqi.net/img/general/width333${result.venue.featuredPhotos.items[0].suffix}">
-      <h3 class="venue"><a href="${result.venue.url}" target="_blank">${result.venue.name}</a></h3>
+    <div class="row">
+      <div class="venue-results col-4">
+        <img class="featured-picture" src="https://igx.4sqi.net/img/general/width333${result.venue.featuredPhotos.items[0].suffix}" alt="picture from venue">
+        <div class="results-content">
+          <h3 class="venue"><a href="${result.venue.url}" target="_blank">${result.venue.name}</a></h3>
+          <p>Type of venue: ${result.venue.categories[0].name}</p>
+          <p>Phone Number: ${result.venue.contact.phone}</p>
+          <p>${result.venue.location.formattedAddress[0]}</p>
+          <p>${result.venue.location.formattedAddress[1]}</p>
+        </div>
+      </div>
     </div>
   `;
 }
