@@ -21,6 +21,7 @@ function getWeatherResults() {
 
         $('.js-weather-results').html(widget);
         $('.js-navigation-buttons').prop('hidden', false);
+        // $('.js-weather-results').prop('hidden', false)
         $('.js-results').html('');
       }
 
@@ -32,7 +33,7 @@ function getWeatherResults() {
 
 function showWeatherData(data) {
   return `
-    <div class="row">
+    <div class="weather-results row">
       <h2 class="results-title">Results for the current weather in ${data.name}:</h2>
       <img class="weather-icon" src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="picture of weather icon">
       <h3 class="weather">Current Weather:</span> ${data.weather[0].main}</h3>

@@ -5,6 +5,9 @@
 
 main {
   padding-top: 100px;
+  font-weight: bolder;
+  font-size: 20px;
+  text-shadow: 1px 0 black;
 }
 
 header,
@@ -62,6 +65,48 @@ form {
 .options a:hover {
     background-color: #ddd;
     color: black;
+}
+
+body {
+  background: url(http://blog.buckitdream.com/wp-content/uploads/2017/11/madrriii.jpg) no-repeat center center fixed;
+}
+
+.js-start-display {
+  padding-bottom: 20px;
+  padding-top: 1px;
+  background: rgba(255,255,255, 0.3);
+}
+
+.weather-results {
+  background: rgba(255,255,255, 0.3);
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: 900;
+  text-shadow: 1px 0 black;
+}
+
+header p {
+  font-weight: bolder;
+  font-size: 20px;
+  text-shadow: 1px 0 black;
+}
+
+.venue-results {
+  font-weight: 900;
+  text-shadow: 1px 0 black;
+  background: rgba(255,255,255, 0.3);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 5px;
 }
 
 
