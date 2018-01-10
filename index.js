@@ -55,7 +55,7 @@ function showWeatherData(data) {
   `;
 }
 
-//get venue results from Foursquare Place API
+//get venue results from Foursquare Places API
 function getPlacesResults() {
   $('.category-tab').click(function(event) {
     $('html, body').animate({
