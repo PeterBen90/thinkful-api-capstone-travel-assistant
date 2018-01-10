@@ -23,5 +23,5 @@ Technology Used
 	•	JavaScript
 	•	JQuery 
 
-
+Live link: https://peterben90.github.io/thinkful-api-capstone-travel-assistant/
 
