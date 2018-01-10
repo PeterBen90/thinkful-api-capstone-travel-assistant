@@ -70,7 +70,6 @@ function getPlacesResults() {
         type: 'GET',
         dataType: 'jsonp',
         success: function(data) {
-          console.log(data);
           let results = data.response.groups[0].items.map(function (item, index) {
             return showPlacesData(item);
            });

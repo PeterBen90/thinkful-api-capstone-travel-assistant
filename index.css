@@ -67,6 +67,10 @@ form {
     color: black;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background: url(http://blog.buckitdream.com/wp-content/uploads/2017/11/madrriii.jpg);
   background-repeat: no-repeat;
