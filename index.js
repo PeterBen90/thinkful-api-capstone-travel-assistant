@@ -44,7 +44,7 @@ function showWeatherData(data) {
   return `
     <div class="weather-results row">
       <h2 class="results-title">Results for the current weather in ${data.name}:</h2>
-      <img class="weather-icon" src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="picture of weather icon">
+      <img class="weather-gif" src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="picture of weather icon">
       <h3 class="weather">Current Weather:</span> ${data.weather[0].main}</h3>
       <h3 class="weather">Description: ${data.weather[0].description}</h3>
       <h3 class="weather">Tempurature: ${data.main.temp} °C</h3>
