@@ -2,6 +2,8 @@
 
 Thinkful API Capstone Project - Travel Assistant web app using Foursquare, OpenWeatherMap and Google Places API
 
+Screenshots:
+
 https://raw.githubusercontent.com/PeterBen90/thinkful-api-capstone-travel-assistant/master/screenshots/Screen%20Shot%202018-01-10%20at%204.53.22%20PM.png
 
 https://raw.githubusercontent.com/PeterBen90/thinkful-api-capstone-travel-assistant/master/screenshots/Screen%20Shot%202018-01-10%20at%204.53.37%20PM.png
