@@ -85,7 +85,7 @@ body {
   padding-top: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   font-weight: 900;
   text-shadow: 1px 0 black;
 }
@@ -106,7 +106,7 @@ header p {
   margin-bottom: 20px;
   margin-left: 30%;
   margin-right: 30%;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .venue-photo {
@@ -128,19 +128,53 @@ header p {
 
 .button {
   text-align: center;
-  margin-top: 300px;
+  margin-top: 80px;
 }
 
 .title {
   font-size: 50px;
   margin-top: 0;
+  margin-bottom: 60px;
 }
 
+.travel-icon {
+  width: 150px;
+  margin-top: 5px;
+  display: inline-block;
+  background: rgba(255,255,255, 0.6);
+  border-radius: 20px;
+  padding: 2px;
+}
 
+.weather-icon {
+  width: 150px;
+  background: rgba(255,255,255, 0.6);
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 20px;
+  padding: 2px;
+}
 
+.destination-icon {
+  width: 150px;
+  background: rgba(255,255,255, 0.6);
+  border-radius: 20px;
+  padding: 2px;
+}
 
+.display-icons {
+  text-align: center;
+}
 
+.caption {
+  position: relative;
+  bottom: 45px;
+}
 
+.title-page {
+  position: relative;
+  bottom: 40px;
+}
 
 
 

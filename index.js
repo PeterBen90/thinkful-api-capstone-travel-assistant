@@ -1,3 +1,4 @@
+//Start app, show start display
 function appStart() {
   $('.start-button').click(function(event) {
     $('.home-page').hide();
@@ -5,11 +6,13 @@ function appStart() {
   });
 }
 
+//get autocomplete city query from google API
 function autocompleteQuery() {
   let input = document.getElementById('search-term');
   let autocomplete = new google.maps.places.Autocomplete(input);
 }
 
+//get current weather results from Openweathermap API
 function getWeatherResults() {
   $('.js-search-form').submit(function(event) {
     event.preventDefault();
@@ -36,6 +39,7 @@ function getWeatherResults() {
 
 }
 
+//show weather data on DOM
 function showWeatherData(data) {
   return `
     <div class="weather-results row">
@@ -51,6 +55,7 @@ function showWeatherData(data) {
   `;
 }
 
+//get venue results from Foursquare Place API
 function getPlacesResults() {
   $('.category-tab').click(function(event) {
     $('html, body').animate({
@@ -77,6 +82,7 @@ function getPlacesResults() {
   });
 }
 
+//show places data on DOM
 function showPlacesData(result) {
   return `
     <div class="col-4">
