@@ -68,7 +68,7 @@ form {
 }
 
 body {
-  background: url(http://blog.buckitdream.com/wp-content/uploads/2017/11/madrriii.jpg) no-repeat 50% fixed / cover;;
+  background: url(http://blog.buckitdream.com/wp-content/uploads/2017/11/madrriii.jpg) no-repeat 50% fixed / cover;
 
 }
 
@@ -105,8 +105,8 @@ header p {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
   border-radius: 20px;
 }
 
