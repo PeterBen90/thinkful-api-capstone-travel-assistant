@@ -21,7 +21,6 @@ function getWeatherResults() {
 
         $('.js-weather-results').html(widget);
         $('.js-navigation-buttons').prop('hidden', false);
-        // $('.js-weather-results').prop('hidden', false)
         $('.js-results').html('');
       }
 
@@ -74,9 +73,9 @@ function getPlacesResults() {
 
 function showPlacesData(result) {
   return `
-    <div class="row">
-      <div class="venue-results col-4">
-        <img class="featured-picture" src="https://igx.4sqi.net/img/general/width333${result.venue.featuredPhotos.items[0].suffix}" alt="picture from venue">
+    <div class="col-4">
+      <div class="venue-results">
+      <img class="venue-photo" src="https://igx.4sqi.net/img/general/width333${result.venue.featuredPhotos.items[0].suffix}" alt="photo from venue">
         <div class="results-content">
           <h3 class="venue"><a href="${result.venue.url}" target="_blank">${result.venue.name}</a></h3>
           <p>Type of venue: ${result.venue.categories[0].name}</p>

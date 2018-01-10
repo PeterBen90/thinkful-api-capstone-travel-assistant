@@ -6,7 +6,6 @@
 main {
   padding-top: 100px;
   font-weight: bolder;
-  font-size: 20px;
   text-shadow: 1px 0 black;
 }
 
@@ -108,6 +107,11 @@ header p {
   margin-right: 30%;
   border-radius: 5px;
 }
+
+.venue-photo {
+  width: 50%;
+}
+
 
 
 
