@@ -68,8 +68,11 @@ form {
 }
 
 body {
-  background: url(http://blog.buckitdream.com/wp-content/uploads/2017/11/madrriii.jpg) no-repeat 50% fixed / cover;
-
+  background: url(http://blog.buckitdream.com/wp-content/uploads/2017/11/madrriii.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .js-start-display {
