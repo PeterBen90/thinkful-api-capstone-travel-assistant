@@ -1,3 +1,10 @@
+function appStart() {
+  $('.start-button').click(function(event) {
+    $('.home-page').hide();
+    $('.js-start-display').prop('hidden', false);
+  });
+}
+
 function autocompleteQuery() {
   let input = document.getElementById('search-term');
   let autocomplete = new google.maps.places.Autocomplete(input);
@@ -11,21 +18,20 @@ function getWeatherResults() {
     }, 1500);
     let city = $('.search-query').val();
 
-    $.ajax({
+      $.ajax({
 
-      url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=7113abbcc3d0ba25223772c94f923152`,
-      type: 'GET',
-      dataType: 'jsonp',
-      success: function(data) {
-        let widget = showWeatherData(data);
+        url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=7113abbcc3d0ba25223772c94f923152`,
+        type: 'GET',
+        dataType: 'jsonp',
+        success: function(data) {
+          let widget = showWeatherData(data);
 
-        $('.js-weather-results').html(widget);
-        $('.js-navigation-buttons').prop('hidden', false);
-        $('.js-results').html('');
-      }
+          $('.js-weather-results').html(widget);
+          $('.js-navigation-tabs').prop('hidden', false);
+          $('.js-results').html('');
+        }
 
-    });
-
+      });
  });
 
 }
@@ -46,7 +52,7 @@ function showWeatherData(data) {
 }
 
 function getPlacesResults() {
-  $('.category-button').click(function(event) {
+  $('.category-tab').click(function(event) {
     $('html, body').animate({
       scrollTop: $("#places-results").offset().top
     }, 1500);
@@ -75,7 +81,7 @@ function showPlacesData(result) {
   return `
     <div class="col-4">
       <div class="venue-results">
-      <img class="venue-photo" src="https://igx.4sqi.net/img/general/width333${result.venue.featuredPhotos.items[0].suffix}" alt="photo from venue">
+        <img class="venue-photo" src="https://igx.4sqi.net/img/general/width333${result.venue.featuredPhotos.items[0].suffix}" alt="photo from venue">
         <div class="results-content">
           <h3 class="venue"><a href="${result.venue.url}" target="_blank">${result.venue.name}</a></h3>
           <p>Type of venue: ${result.venue.categories[0].name}</p>
@@ -88,9 +94,11 @@ function showPlacesData(result) {
   `;
 }
 
+$(appStart);
 $(getWeatherResults);
 $(getPlacesResults);
 $(autocompleteQuery);
+
 
 
 

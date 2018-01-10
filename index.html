@@ -11,28 +11,37 @@
 
   <main role="main" aria-live="assertive">
 
-    <section role="region" class="js-start-display" id="start-page">
+    <section role="region" class="home-page" id="home-display">
+      <header class="row" role="banner" id="home-page-title">
+        <h1 class="title">Travel Assisstant +Plus</h1>
+      </header>
+      <div class="button">
+        <button type="submit" class="start-button">Start</button>
+      </div>
+    </section>
+
+    <section role="region" class="js-start-display" id="start-page" hidden>
       <header class="row" role="banner">
         <h1 class="logo">Travel Assistant +Plus</h1>
         <p>Enter your location to find weather conditions and recommendations closest to you!</p>
       </header>
 
       <form action="#" class="js-search-form row" id="search-form">
-        <input type="text" placeholder="Enter a city" class="search-query" id="search-term" required>
+        <input type="text" aria-label="search city" placeholder="Enter a city" class="search-query" id="search-term" required>
         <button type="submit" class="submit-button">Search</button>
       </form>
     </section>
 
     <section role="region" class="js-weather-results" id="weather-results"></section>
 
-    <nav role="navigation" class="js-navigation-buttons" id="navigation-results" hidden>
+    <nav role="navigation" class="js-navigation-tabs" id="navigation-results" hidden>
       <div class="options row">
-        <a class="category-button" href="#food">Food</a>
-        <a class="category-button" href="#shops">Shops</a>
-        <a class="category-button" href="#arts">Arts</a>
-        <a class="category-button" href="#outdoors">Outdoors</a>
-        <a class="category-button" href="#nightlife">Nightlife</a>
-        <a class="category-button" href="#trending">Trending</a>
+        <a class="category-tab" href="#food">Food</a>
+        <a class="category-tab" href="#shops">Shops</a>
+        <a class="category-tab" href="#arts">Arts</a>
+        <a class="category-tab" href="#outdoors">Outdoors</a>
+        <a class="category-tab" href="#nightlife">Nightlife</a>
+        <a class="category-tab" href="#trending">Trending</a>
       </div>
     </nav>
 

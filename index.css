@@ -26,6 +26,7 @@ form {
 .submit-button {
   font-size: 20px;
   border-radius: 5px;
+  border: 2px solid black;
 }
 
 .js-weather-results {
@@ -112,9 +113,28 @@ header p {
   width: 50%;
 }
 
+.venue {
+  text-shadow: 1px 0 blue;
+}
 
 
+.start-button {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 2px solid black;
+}
 
+.button {
+  text-align: center;
+  margin-top: 300px;
+}
+
+.title {
+  font-size: 50px;
+  margin-top: 0;
+}
 
 
 
