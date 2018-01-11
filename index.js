@@ -8,8 +8,8 @@ function appStart() {
 
 //get autocomplete city query from google API
 function autocompleteQuery() {
-  let input = document.getElementById('search-term');
-  let autocomplete = new google.maps.places.Autocomplete(input);
+  let input = $('#search-term');
+  let autocomplete = new google.maps.places.Autocomplete(input[0]);
 }
 
 //get current weather results from Openweathermap API
@@ -27,11 +27,17 @@ function getWeatherResults() {
         type: 'GET',
         dataType: 'jsonp',
         success: function(data) {
+          console.log(data);
           let widget = showWeatherData(data);
 
           $('.js-weather-results').html(widget);
           $('.js-navigation-tabs').prop('hidden', false);
           $('.js-results').html('');
+          $('.error').html('');
+        },
+        error: function(error) {
+          $('.error').prop('hidden', false);
+          $('.error').html('No results, please choose another city!');
         }
 
       });
