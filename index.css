@@ -33,8 +33,10 @@ form {
   text-align: center;
 }
 
-.js-navigation-buttons {
-  text-align: center;
+.js-navigation-tabs {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .category-button {
@@ -82,11 +84,11 @@ body {
 .js-start-display {
   padding-bottom: 20px;
   padding-top: 1px;
-  background: rgba(255,255,255, 0.3);
+  background: rgba(255,255,255, 0.5);
 }
 
 .weather-results {
-  background: rgba(255,255,255, 0.3);
+  background: rgba(255,255,255, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 15%;
   margin-right: 15%;
@@ -108,7 +110,7 @@ header p {
 .venue-results {
   font-weight: 900;
   text-shadow: 1px 0 black;
-  background: rgba(255,255,255, 0.3);
+  background: rgba(255,255,255, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   padding-top: 20px;

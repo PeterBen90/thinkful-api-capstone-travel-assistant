@@ -73,6 +73,7 @@ function getPlacesResults() {
           let results = data.response.groups[0].items.map(function (item, index) {
             return showPlacesData(item);
            });
+
           $('.js-results').html(results);
         }
 
