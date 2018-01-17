@@ -1,4 +1,4 @@
-//Start app, show start display
+s//Start app, show start display
 function appStart() {
   $('.start-button').click(function(event) {
     $('.home-page').hide();
