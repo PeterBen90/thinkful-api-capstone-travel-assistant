@@ -1,4 +1,4 @@
-s//Start app, show start display
+//Start app, show start display
 function appStart() {
   $('.start-button').click(function(event) {
     $('.home-page').hide();
@@ -76,6 +76,7 @@ function getPlacesResults() {
         type: 'GET',
         dataType: 'jsonp',
         success: function(data) {
+          //console.log(data);
           let results = data.response.groups[0].items.map(function (item, index) {
             return showPlacesData(item);
            });
