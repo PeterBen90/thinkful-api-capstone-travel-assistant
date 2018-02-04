@@ -107,6 +107,7 @@ function showPlacesData(result) {
   `;
 }
 
+
 $(appStart);
 $(getWeatherResults);
 $(getPlacesResults);

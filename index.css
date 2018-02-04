@@ -72,21 +72,28 @@ html, body {
 }
 
 body {
-  background: url(http://blog.buckitdream.com/wp-content/uploads/2017/11/madrriii.jpg);
+  /*background: url(http://blog.buckitdream.com/wp-content/uploads/2017/11/madrriii.jpg);*/
+  background: url(https://wallpaperclicker.com/storage/wallpaper/animated-red-sky-sunset-wallpaper-74826976.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
 }
 
+.title,
+.caption {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
 .js-start-display {
   padding-bottom: 20px;
   padding-top: 1px;
-  background: rgba(255,255,255, 0.5);
+  background: rgba(255,255,255, 0.3);
 }
 
 .weather-results {
-  background: rgba(255,255,255, 0.5);
+  background: rgba(255,255,255, 0.3);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 15%;
   margin-right: 15%;
@@ -108,7 +115,7 @@ header p {
 .venue-results {
   font-weight: 900;
   text-shadow: 1px 0 black;
-  background: rgba(255,255,255, 0.5);
+  background: rgba(255,255,255, 0.3);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   padding-top: 20px;
@@ -203,4 +210,25 @@ header p {
   text-align: center;
 }
 
+/*@-webkit-keyframes animatedBackground{
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
 
+body {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 768px;
+    z-index: 0;
+    background-image: url(https://1.bp.blogspot.com/-yp5pbHNr3j8/WTfypeIPRNI/AAAAAAAAG40/L3c6ewqISHMgeAYzP12HcQevymhvkoIeACLcB/w530-h212-p-k/bg-clouds.png);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    min-width: 500px;
+
+    animation: animatedBackground 60s linear infinite;
+    -ms-animation: animatedBackground 60s linear infinite;
+    -moz-animation: animatedBackground 60s linear infinite;
+    -webkit-animation: animatedBackground 60s linear infinite;
+}
+*/
