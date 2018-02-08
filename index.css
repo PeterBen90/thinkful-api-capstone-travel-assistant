@@ -32,12 +32,14 @@ form {
 
 .js-weather-results {
   text-align: center;
+  margin-top: 20px;
 }
 
 .js-navigation-tabs {
-  position: sticky !important;
+  position: fixed !important;
   top: 0;
   z-index: 100;
+  width: 100%;
 }
 
 
@@ -72,7 +74,6 @@ html, body {
 }
 
 body {
-  /*background: url(http://blog.buckitdream.com/wp-content/uploads/2017/11/madrriii.jpg);*/
   background: url(https://wallpaperclicker.com/storage/wallpaper/animated-red-sky-sunset-wallpaper-74826976.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -90,6 +91,7 @@ body {
   padding-bottom: 20px;
   padding-top: 1px;
   background: rgba(255,255,255, 0.3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .weather-results {
@@ -118,22 +120,39 @@ header p {
   background: rgba(255,255,255, 0.3);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  margin-left: 15%;
-  margin-right: 15%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
   border-radius: 20px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
+.results-content {
+  padding: 10px;
+  overflow: hidden;
+  font-size: 0.9em;
 }
 
 .venue-photo {
-  width: 50%;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-size: cover;
+  background-position: center center;
+  float: left;
+  height: 15em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.venue {
+.result-name {
   text-shadow: 1px 0 blue;
+}
+
+.js-results {
+  padding-top: 20px;
+  width: 100%;
 }
 
 
@@ -209,6 +228,8 @@ header p {
   font-size: 20px;
   text-align: center;
 }
+
+
 
 /*@-webkit-keyframes animatedBackground{
   from { background-position: 0 0; }
