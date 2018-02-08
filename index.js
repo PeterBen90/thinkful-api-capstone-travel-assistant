@@ -105,7 +105,7 @@ function showPlacesData(result) {
                 </span>
                 <p class="result-address">${result.venue.location.formattedAddress[0]}</p>
                 <p class="result-address">${result.venue.location.formattedAddress[1]}</p>
-                <p class="result-address">${result.venue.location.formattedAddress[2]}</p>
+                <p class="phone-number">${result.venue.contact.phone}</p>
         </div>
       </div>
     </div>
