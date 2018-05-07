@@ -1,4 +1,4 @@
-#Travel Assistant +Plus by Peter Benvenuto
+Travel Assistant +Plus by Peter Benvenuto
 
 Thinkful API Capstone Project - Travel Assistant web app using Foursquare, OpenWeatherMap and Google Places API
 
