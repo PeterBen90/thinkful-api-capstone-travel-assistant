@@ -261,7 +261,7 @@ header p {
   color: black;
 }
 
-/*.social:hover {
+.social:hover {
   color: #3B5998;
 }
 
@@ -278,5 +278,5 @@ header p {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
-}*/
+}
 
