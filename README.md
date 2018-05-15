@@ -2,6 +2,8 @@ Travel Assistant +Plus by Peter Benvenuto
 
 Thinkful API Capstone Project - Travel Assistant web app using Foursquare, OpenWeatherMap and Google Places API
 
+<img src="icons/travel-assisstant.png" width="500" height="250">
+
 Summary:
 
 This app enables the user to input a city into the search query and find the current weather data for that city using the OpenWeatherMap API. Once they have found the weather for the city
