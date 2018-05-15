@@ -239,13 +239,16 @@ header p {
 .footer {
   position: absolute;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 45px;
   text-align: center;
   left: 0;
   right: 0;
+  bottom: -120px;
   background: rgba(255,255,255, 0.5);
-  margin-top: 45px;
+/*  margin-bottom: -40px;*/
+  padding-top: 3px;
 }
+
 
 .footer p {
   font-size: 20px;
