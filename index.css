@@ -239,16 +239,14 @@ header p {
 .footer {
   position: absolute;
   width: 100%;
-  margin-top: 45px;
+  margin-top: 10px;
   text-align: center;
   left: 0;
   right: 0;
-  bottom: -120px;
+  bottom: -550px;
   background: rgba(255,255,255, 0.5);
-/*  margin-bottom: -40px;*/
-  padding-top: 3px;
+  margin-top: 45px;
 }
-
 
 .footer p {
   font-size: 20px;
@@ -279,5 +277,15 @@ header p {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+
+  .travel-icon,
+  .weather-icon,
+  .destination-icon {
+    width: 120px;
+  }
+
 }
 
