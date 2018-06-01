@@ -127,37 +127,38 @@ header p {
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
   margin-bottom: 20px;
-  font-size: 0.9em;
+  font-size: 14px;
+  width: 100%;
 }
 
 .results-content {
   padding: 10px;
   overflow: hidden;
-  font-size: 0.9em;
+  font-size: 14px;
 }
 
-.venue-photo {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-size: cover;
-  background-position: center center;
-  float: left;
-  height: 15em;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+
+.result-name a {
+  text-shadow: 1px 0 purple;
+  color: purple;
 }
 
 .result-name {
-  text-shadow: 1px 0 blue;
+  font-size: 18px;
 }
 
 .js-results {
   padding-top: 20px;
   width: 100%;
+}
+
+.icon img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
 }
 
 

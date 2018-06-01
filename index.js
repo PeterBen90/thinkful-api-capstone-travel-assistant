@@ -76,16 +76,15 @@ function getPlacesResults() {
         type: 'GET',
         dataType: 'jsonp',
         success: function(data) {
-          //console.log(data);
+           console.log(data);
           let results = data.response.groups[0].items.map(function (item, index) {
             return showPlacesData(item);
-           });
+          });
 
           $('.js-results').html(results);
         }
 
       });
-
   });
 }
 
@@ -94,18 +93,16 @@ function showPlacesData(result) {
   return `
      <div class="col-4">
       <div class="venue-results">
-      <img class="venue-photo" src="https://igx.4sqi.net/img/general/width960${result.venue.featuredPhotos.items[0].suffix}" alt="photo from venue">
         <div class="results-content">
                 <h2 class="result-name"><a href="${result.venue.url}" target="_blank">${result.venue.name}</a></h2>
                 <span class="icon">
                     <img src="${result.venue.categories[0].icon.prefix}bg_32${result.venue.categories[0].icon.suffix}" alt="category-icon">
-                </span>
+                </span></br>
                 <span class="icon-text">
                     ${result.venue.categories[0].name}
                 </span>
                 <p class="result-address">${result.venue.location.formattedAddress[0]}</p>
                 <p class="result-address">${result.venue.location.formattedAddress[1]}</p>
-                <p class="phone-number">${result.venue.contact.phone}</p>
         </div>
       </div>
     </div>
