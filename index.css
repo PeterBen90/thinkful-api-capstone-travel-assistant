@@ -359,6 +359,11 @@ div .result-image {
     border-radius: 10px;
   }
 
+  .weather-icon {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .title,
   .logo {
     font-size: 45px;
