@@ -358,4 +358,9 @@ div .result-image {
     width: 70px;
     border-radius: 10px;
   }
+
+  .title,
+  .logo {
+    font-size: 45px;
+  }
 }
