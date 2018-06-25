@@ -78,7 +78,7 @@ function getPlacesResults() {
     let city = $('.search-query').val();
 
     $.ajax({
-      url: `https://api.foursquare.com/v2/venues/explore?&near=${city}&section=${category}&venuePhotos=1&limit=12&client_id=4EV4L2TYGITPLJCO4NYMHAXT1VU5ORATYF0DYR3OKO4O0LEF&client_secret=O0MRRAG1BNMQBID4LOIFNRD1XANUCP0J0TV2QTJAYNW1M5RR&v=20180417`,
+      url: `https://api.foursquare.com/v2/venues/explore?&near=${city}&section=${category}&venuePhotos=1&limit=12&client_id=FPRD2S2RFIB4QLBNBBHNAMLYOUF2AZSZ21ZK53QYASWCRJ1Z&client_secret=FEFA44EG0YDZ0XKA1UWX5ZWLZJLE30E2GYRLGB44PKE5KZ0E&v=20180625`,
       type: 'GET',
       dataType: 'jsonp',
       success: function(data) {
@@ -104,7 +104,7 @@ function showPlacesData(result) {
   const FOURSQUARE_PHOTO_URL =
     'https://api.foursquare.com/v2/venues/' +
     result.venue.id +
-    '/photos?&client_id=4EV4L2TYGITPLJCO4NYMHAXT1VU5ORATYF0DYR3OKO4O0LEF&client_secret=O0MRRAG1BNMQBID4LOIFNRD1XANUCP0J0TV2QTJAYNW1M5RR&v=20180417';
+    '/photos?&client_id=FPRD2S2RFIB4QLBNBBHNAMLYOUF2AZSZ21ZK53QYASWCRJ1Z&client_secret=FEFA44EG0YDZ0XKA1UWX5ZWLZJLE30E2GYRLGB44PKE5KZ0E&v=20180625';
 
   //ajax call for separate photos endpoint for each item in previous ajax call
   $.ajax(FOURSQUARE_PHOTO_URL, {

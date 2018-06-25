@@ -31,6 +31,7 @@ form {
 .js-weather-results {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .js-navigation-tabs {
@@ -49,7 +50,7 @@ form {
 }
 
 .options {
-  background-color: #333;
+  background-color: black;
   overflow: hidden;
   margin-bottom: 20px;
   text-align: center;
@@ -93,11 +94,11 @@ body {
 .js-start-display {
   padding-bottom: 20px;
   padding-top: 1px;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
   left: 0;
   right: 0;
   width: 100%;
+  text-shadow: 2px 2px black;
 }
 
 .weather-results {
@@ -109,7 +110,7 @@ body {
   padding-top: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: 900;
   text-shadow: 1px 0 black;
 }
@@ -117,7 +118,7 @@ body {
 header p {
   font-weight: bolder;
   font-size: 20px;
-  text-shadow: 1px 0 black;
+  text-shadow: 2px 2px black;
 }
 
 .start-button {
@@ -202,7 +203,7 @@ header p {
   text-align: center;
   left: 0;
   right: 0;
-  bottom: -550px;
+  bottom: -200px;
   background: rgba(255, 255, 255, 0.5);
   margin-top: 45px;
 }
@@ -246,7 +247,7 @@ header p {
   }
 }
 
-/*** hike result display ***/
+/*** venue result display ***/
 
 div .result-image {
   width: 100%;
@@ -265,6 +266,7 @@ div .result-image {
   padding: 10px;
   background: rgba(230, 223, 223, 0.5);
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .result-description {
@@ -278,6 +280,7 @@ div .result-image {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-align: justify;
+  font-size: 14px;
   word-spacing: -2px;
 }
 
@@ -316,8 +319,6 @@ div .result-image {
 #foursquare-results {
   padding-left: 17%;
   margin: 0 auto;
-  /*  padding-right: 20px;*/
-  /*  max-width: 1000px;*/
 }
 
 .row {
@@ -343,10 +344,17 @@ div .result-image {
   .js-weather-results {
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
   }
 
   #foursquare-results {
     padding-left: 0;
     padding-right: 5%;
+  }
+
+  .travel-icon,
+  .weather-icon,
+  .destination-icon {
+    width: 70px;
   }
 }
