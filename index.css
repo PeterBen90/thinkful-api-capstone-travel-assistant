@@ -356,6 +356,6 @@ div .result-image {
   .weather-icon,
   .destination-icon {
     width: 70px;
-    border-radius: 15px;
+    border-radius: 10px;
   }
 }
