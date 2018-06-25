@@ -49,27 +49,28 @@ form {
 }
 
 .options {
-    background-color: #333;
-    overflow: hidden;
-    margin-bottom: 20px;
-    text-align: center;
+  background-color: #333;
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .options a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 16px 18px;
-    text-decoration: none;
-    font-size: 17px;
-    display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
 }
 
 .options a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -92,7 +93,7 @@ body {
 .js-start-display {
   padding-bottom: 20px;
   padding-top: 1px;
-  background: rgba(255,255,255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   left: 0;
   right: 0;
@@ -100,7 +101,7 @@ body {
 }
 
 .weather-results {
-  background: rgba(255,255,255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 15%;
   margin-right: 15%;
@@ -118,53 +119,6 @@ header p {
   font-size: 20px;
   text-shadow: 1px 0 black;
 }
-
-.venue-results {
-  font-weight: 900;
-  text-shadow: 1px 0 black;
-  background: rgba(255,255,255, 0.3);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  padding: 10px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  width: 100%;
-}
-
-.results-content {
-  padding: 10px;
-  overflow: hidden;
-  font-size: 12.5px;
-  letter-spacing: 0.4px;
-}
-
-
-.result-name a {
-  text-shadow: 1px 0 black;
-  color: black;
-}
-
-.result-name {
-  font-size: 18px;
-}
-
-.js-results {
-  padding-top: 20px;
-  width: 100%;
-}
-
-.icon img {
-  height: 100px;
-  width: 100px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: 2px solid black;
-}
-
 
 .start-button {
   width: 100px;
@@ -190,14 +144,14 @@ header p {
   width: 150px;
   margin-top: 5px;
   display: inline-block;
-  background: rgba(255,255,255, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   padding: 2px;
 }
 
 .weather-icon {
   width: 150px;
-  background: rgba(255,255,255, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   margin-left: 20%;
   margin-right: 20%;
   border-radius: 20px;
@@ -206,7 +160,7 @@ header p {
 
 .destination-icon {
   width: 150px;
-  background: rgba(255,255,255, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   padding: 2px;
 }
@@ -234,7 +188,7 @@ header p {
 }
 
 .error {
-  background: rgba(255,255,255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   font-size: 20px;
   text-align: center;
 }
@@ -249,7 +203,7 @@ header p {
   left: 0;
   right: 0;
   bottom: -550px;
-  background: rgba(255,255,255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   margin-top: 45px;
 }
 
@@ -261,12 +215,12 @@ header p {
 }
 
 .social {
-  margin:10px;
+  margin: 10px;
   color: black;
 }
 
 .social:hover {
-  color: #3B5998;
+  color: #3b5998;
 }
 
 .footer .social:hover {
@@ -285,12 +239,114 @@ header p {
 }
 
 @media screen and (max-width: 768px) {
-
   .travel-icon,
   .weather-icon,
   .destination-icon {
     width: 120px;
   }
-
 }
 
+/*** hike result display ***/
+
+div .result-image {
+  width: 100%;
+  float: left;
+  height: 15em;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.col-3,
+.result {
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(230, 223, 223, 0.5);
+  width: 100%;
+}
+
+.result-description {
+  padding: 10px;
+  overflow: hidden;
+  font-size: 0.9em;
+  text-align: justify;
+}
+
+.result-description h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: justify;
+  word-spacing: -2px;
+}
+
+.result-address {
+  font-size: 12px;
+}
+
+.result-name {
+  font-size: 20px;
+}
+
+#foursquare-results span {
+  display: inline-block;
+  border-radius: 5px;
+  vertical-align: top;
+  height: 32px;
+  background-color: #ccc;
+  padding: 0;
+}
+
+#foursquare-results span.icon-text {
+  padding: 8px 4px 0 4px;
+}
+
+.hike-directions {
+  font-family: 'BenchNine';
+  font-size: 1.3em;
+  color: black;
+}
+
+.hike-directions:hover {
+  color: steelblue;
+}
+/*** responsive design ***/
+
+#foursquare-results {
+  padding-left: 17%;
+  margin: 0 auto;
+  /*  padding-right: 20px;*/
+  /*  max-width: 1000px;*/
+}
+
+.row {
+  padding-left: 20px;
+  margin: 0 auto;
+  padding-right: 20px;
+  /*  max-width: 700px;*/
+}
+
+@media screen and (min-width: 640px) {
+  .col-3 {
+    display: inline-block;
+    width: 30%;
+    vertical-align: text-top;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  form button {
+    margin-top: 15px;
+  }
+
+  .js-weather-results {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #foursquare-results {
+    padding-left: 0;
+    padding-right: 5%;
+  }
+}
