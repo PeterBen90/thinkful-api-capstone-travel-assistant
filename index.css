@@ -26,6 +26,15 @@ form {
   border-radius: 5px;
   border: 2px solid black;
   background-color: white;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.8s;
 }
 
 .js-weather-results {
@@ -128,6 +137,15 @@ header p {
   font-size: 20px;
   border: 2px solid black;
   background-color: white;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.8s;
 }
 
 .button {
