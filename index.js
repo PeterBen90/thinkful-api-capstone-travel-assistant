@@ -157,7 +157,7 @@ function showPlacesData(result) {
                     <p class="result-address">${
                       result.venue.location.formattedAddress[2]
                     }</p>
-                    <a class="hike-directions" href="${venueLink}" target="_blank">Get Directions</a>
+                    <a class="venue-directions" href="${venueLink}" target="_blank">Get Directions</a>
                 </div>
             </div>
         `;

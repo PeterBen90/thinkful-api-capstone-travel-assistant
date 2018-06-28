@@ -323,13 +323,13 @@ div .result-image {
   padding: 8px 4px 0 4px;
 }
 
-.hike-directions {
+.venue-directions {
   font-family: 'Encode Sans Expanded', sans-serif;
   font-size: 1.3em;
   color: black;
 }
 
-.hike-directions:hover {
+.venue-directions:hover {
   color: steelblue;
 }
 /*** responsive design ***/
