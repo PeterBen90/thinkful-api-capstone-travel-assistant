@@ -87,7 +87,8 @@ body {
 }
 
 body {
-  background: url(https://wallpaperclicker.com/storage/wallpaper/animated-red-sky-sunset-wallpaper-74826976.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/travel.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
