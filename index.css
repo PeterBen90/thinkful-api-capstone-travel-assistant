@@ -86,12 +86,23 @@ body {
   padding: 0;
 }
 
-body {
+/* body {
   background: url(/images/plane.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+} */
+
+body {
+  background: rgb(166, 155, 47);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 155, 47, 1) 0%,
+    rgba(70, 97, 35, 1) 60%,
+    rgba(68, 94, 35, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .title,
